@@ -1,12 +1,7 @@
 angular.module('dataBetween')
-.controller('MasterController', ['$scope','$log','$interval', function($scope,$log,$interval){
+.controller('MasterController', ['$scope','$log','shareService', function($scope,$log,shareService){
   $scope.vm = {};
   $scope.vm.searchText = "";
   $scope.vm.orderBy = "";
-
-  $interval(function(){
-    $log.info($scope.vm);
-  },5000);
-
-
+  
 }]);

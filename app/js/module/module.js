@@ -1,1 +1,1 @@
-angular.module('dataBetween', []);
+angular.module('dataBetween', ['ngStorage']);
