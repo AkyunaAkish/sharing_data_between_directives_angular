@@ -1,17 +1,19 @@
-<h1>Second</h1>
+<h1>Second Directive</h1>
+<div class="sectionClass">
+  <h5>Search through data in other directive using shared variables in controller</h5>
+  <input type="text" ng-model="searchText">
+</div>
 
-<p>Search</p>
-<input type="text" ng-model="searchText">
-<br>
-<p>Order By</p>
-<select ng-model="orderBy">
-  <option value="-votes">Votes</option>
-  <option value="">None</option>
-</select>
-<br>
-<br>
+<div class="sectionClass">
+  <h5>Order data in other directive using shared variables in controller</h5>
+  <select ng-model="orderBy">
+    <option value="-votes">Votes</option>
+    <option value="">None</option>
+  </select>
+</div>
 
-
-
-<input type="number" ng-model="vm.newData">
-<button ng-click="changeData()">Change Data</button>
+<div class="sectionClass">
+  <h5> Updating data in the service: </h5>
+  <input type="number" ng-model="vm.newData">
+  <button ng-click="changeData()">Change Data</button>
+</div>

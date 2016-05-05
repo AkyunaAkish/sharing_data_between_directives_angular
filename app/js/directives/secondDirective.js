@@ -8,6 +8,7 @@ angular.module('dataBetween')
     templateUrl: './directive_templates/second_directive.html',
     link: function(scope,element,attrs){
       scope.vm = {};
+      scope.vm.data = shareService.getData();
 
       scope.changeData = function(){
         shareService.changeData({votes: scope.vm.newData});

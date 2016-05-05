@@ -4,7 +4,6 @@ angular.module('dataBetween')
     $localStorage.data = [{votes:20},{votes:2},{votes:10}];
   }
 
-
   this.getData = function(){
     return $localStorage.data;
   }

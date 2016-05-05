@@ -1,5 +1,12 @@
-<h1>First</h1>
+<h1>First Directive</h1>
+<div class="sectionClass">
+  <h5>Result of image search in shared controller using $scope.$watch $scope.$broadcast and $scope.$on: </h5>
+  <img ng-src="{{vm.imgSearch}}" alt="">
+</div>
 
-<div ng-repeat="post in vm.data | filter: searchText | orderBy: orderBy">
-  {{post.votes}}
+<div class="sectionClass">
+  <h5>Data from service being filtered from within another directive using variables in a shared controller, also being updated from within a separate directive:</h5>
+  <div ng-repeat="post in vm.data | filter: searchText | orderBy: orderBy">
+    {{post.votes}}
+  </div>
 </div>

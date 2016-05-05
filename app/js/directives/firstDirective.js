@@ -9,6 +9,12 @@ angular.module('dataBetween')
     link: function(scope,element,attrs){
       scope.vm = {};
       scope.vm.data = shareService.getData();
+
+      scope.$on('imgSearchChange', function(event, emission) {
+        $log.info('$on: ', emission);
+        scope.vm.imgSearch = emission;
+      });
+
     }
   }
 }]);

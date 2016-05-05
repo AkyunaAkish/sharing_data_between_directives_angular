@@ -2,6 +2,8 @@
 <html lang="en" ng-app="dataBetween">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="/style/css/style.css">
   <script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
   <script src="js/module/module.js"></script>
@@ -14,9 +16,17 @@
 <body>
 
   <div ng-controller="MasterController">
+
+    <!-- scope.$watch example button -->
+    <h5>Search button in shared controller: </h5>
+    <button ng-click="searchImg()">Search!</button>
+
     <first-directive order-by="vm.orderBy" search-text="vm.searchText"></first-directive>
-    <second-directive order-by="vm.orderBy" search-text="vm.searchText" ></second-directive>
+    <second-directive order-by="vm.orderBy" search-text="vm.searchText"></second-directive>
+
   </div>
+
+
 
 </body>
 </html>
